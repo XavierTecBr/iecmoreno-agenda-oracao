@@ -1,19 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     const calendario = document.getElementById('calendario');
     const dataSelecionada = document.getElementById('dataSelecionada');
-
-    // Função para obter a data da URL
-    function getDiaFromURL() {
-        const urlParams = new URLSearchParams(window.location.search);
-        const dia = urlParams.get('dia');
-        return dia ? parseInt(dia) : null;
-    }
+    const hoje = new Date();
 
     function atualizarCalendario(dia) {
         fetch('assets/membros.json')
             .then(response => response.json())
             .then(membros => {
-                const hoje = new Date();
                 const ano = hoje.getFullYear();
                 const mes = hoje.getMonth(); // Janeiro é 0
                 const diasNoMes = new Date(ano, mes + 1, 0).getDate();
@@ -57,14 +50,20 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     }
 
-    // Atualiza o calendário com a data selecionada
+    // Função para definir a data do campo de data como hoje e atualizar o calendário
+    function inicializarCalendario() {
+        const diaHoje = hoje.getDate();
+        dataSelecionada.value = hoje.toISOString().split('T')[0]; // Formata a data no formato YYYY-MM-DD
+        atualizarCalendario(diaHoje);
+    }
+
+    // Atualiza o calendário com a data selecionada pelo usuário
     dataSelecionada.addEventListener('change', (event) => {
         const data = new Date(event.target.value);
         const dia = data.getDate();
         atualizarCalendario(dia);
     });
 
-    // Atualiza o calendário com o dia atual ao carregar a página
-    const diaAtual = getDiaFromURL() || hoje.getDate();
-    atualizarCalendario(diaAtual);
+    // Inicializa o calendário com a data de hoje
+    inicializarCalendario();
 });
