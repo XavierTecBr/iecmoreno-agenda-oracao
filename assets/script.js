@@ -1,12 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
     const calendario = document.getElementById('calendario');
     const dataSelecionada = document.getElementById('dataSelecionada');
-    const hoje = new Date();
+
+    // Função para obter a data atual considerando o fuso horário de São Paulo (GMT-3)
+    function obterDataNoFusoHorario() {
+        const agora = new Date();
+        // Ajuste o horário para GMT-3
+        const offsetHoras = -3;
+        const dataAjustada = new Date(agora.getTime() + (offsetHoras - agora.getTimezoneOffset() / 60) * 60 * 60 * 1000);
+        return dataAjustada;
+    }
+
+    // Função para formatar a data para o formato YYYY-MM-DD
+    function formatarData(data) {
+        const ano = data.getFullYear();
+        const mes = String(data.getMonth() + 1).padStart(2, '0');
+        const dia = String(data.getDate()).padStart(2, '0');
+        return `${ano}-${mes}-${dia}`;
+    }
 
     function atualizarCalendario(dia) {
         fetch('assets/membros.json')
             .then(response => response.json())
             .then(membros => {
+                const hoje = obterDataNoFusoHorario();
                 const ano = hoje.getFullYear();
                 const mes = hoje.getMonth(); // Janeiro é 0
                 const diasNoMes = new Date(ano, mes + 1, 0).getDate();
@@ -52,15 +69,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Função para definir a data do campo de data como hoje e atualizar o calendário
     function inicializarCalendario() {
+        const hoje = obterDataNoFusoHorario();
         const diaHoje = hoje.getDate();
-        dataSelecionada.value = hoje.toISOString().split('T')[0]; // Formata a data no formato YYYY-MM-DD
+        const dataFormatada = formatarData(hoje);
+        dataSelecionada.value = dataFormatada;
         atualizarCalendario(diaHoje);
     }
 
     // Atualiza o calendário com a data selecionada pelo usuário
     dataSelecionada.addEventListener('change', (event) => {
-        const data = new Date(event.target.value);
-        const dia = data.getDate();
+        const dataSelecionada = new Date(event.target.value);
+        const dataAjustada = new Date(dataSelecionada.getTime() + (-3 - dataSelecionada.getTimezoneOffset() / 60) * 60 * 60 * 1000);
+        const dia = dataAjustada.getDate();
         atualizarCalendario(dia);
     });
 
