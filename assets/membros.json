@@ -1,0 +1,242 @@
+[
+  {
+      "nome": "João Silva",
+      "foto": "https://randomuser.me/api/portraits/men/1.jpg"
+  },
+  {
+      "nome": "Maria Oliveira",
+      "foto": "https://randomuser.me/api/portraits/women/1.jpg"
+  },
+  {
+      "nome": "Carlos Pereira",
+      "foto": "https://randomuser.me/api/portraits/men/2.jpg"
+  },
+  {
+      "nome": "Ana Costa",
+      "foto": "https://randomuser.me/api/portraits/women/2.jpg"
+  },
+  {
+      "nome": "Pedro Souza",
+      "foto": "https://randomuser.me/api/portraits/men/3.jpg"
+  },
+  {
+      "nome": "Clara Santos",
+      "foto": "https://randomuser.me/api/portraits/women/3.jpg"
+  },
+  {
+      "nome": "Lucas Lima",
+      "foto": "https://randomuser.me/api/portraits/men/4.jpg"
+  },
+  {
+      "nome": "Beatriz Almeida",
+      "foto": "https://randomuser.me/api/portraits/women/4.jpg"
+  },
+  {
+      "nome": "Fernando Ribeiro",
+      "foto": "https://randomuser.me/api/portraits/men/5.jpg"
+  },
+  {
+      "nome": "Juliana Barbosa",
+      "foto": "https://randomuser.me/api/portraits/women/5.jpg"
+  },
+  {
+      "nome": "Rafael Mendes",
+      "foto": "https://randomuser.me/api/portraits/men/6.jpg"
+  },
+  {
+      "nome": "Sofia Costa",
+      "foto": "https://randomuser.me/api/portraits/women/6.jpg"
+  },
+  {
+      "nome": "Gustavo Rocha",
+      "foto": "https://randomuser.me/api/portraits/men/7.jpg"
+  },
+  {
+      "nome": "Laura Martins",
+      "foto": "https://randomuser.me/api/portraits/women/7.jpg"
+  },
+  {
+      "nome": "Rodrigo Carvalho",
+      "foto": "https://randomuser.me/api/portraits/men/8.jpg"
+  },
+  {
+      "nome": "Camila Fernandes",
+      "foto": "https://randomuser.me/api/portraits/women/8.jpg"
+  },
+  {
+      "nome": "Vinícius Azevedo",
+      "foto": "https://randomuser.me/api/portraits/men/9.jpg"
+  },
+  {
+      "nome": "Isabela Lima",
+      "foto": "https://randomuser.me/api/portraits/women/9.jpg"
+  },
+  {
+      "nome": "Thiago Gomes",
+      "foto": "https://randomuser.me/api/portraits/men/10.jpg"
+  },
+  {
+      "nome": "Renata Freitas",
+      "foto": "https://randomuser.me/api/portraits/women/10.jpg"
+  },
+  {
+    "nome": "João Silva",
+    "foto": "https://randomuser.me/api/portraits/men/1.jpg"
+},
+{
+    "nome": "Maria Oliveira",
+    "foto": "https://randomuser.me/api/portraits/women/1.jpg"
+},
+{
+    "nome": "Carlos Pereira",
+    "foto": "https://randomuser.me/api/portraits/men/2.jpg"
+},
+{
+    "nome": "Ana Costa",
+    "foto": "https://randomuser.me/api/portraits/women/2.jpg"
+},
+{
+    "nome": "Pedro Souza",
+    "foto": "https://randomuser.me/api/portraits/men/3.jpg"
+},
+{
+    "nome": "Clara Santos",
+    "foto": "https://randomuser.me/api/portraits/women/3.jpg"
+},
+{
+    "nome": "Lucas Lima",
+    "foto": "https://randomuser.me/api/portraits/men/4.jpg"
+},
+{
+    "nome": "Beatriz Almeida",
+    "foto": "https://randomuser.me/api/portraits/women/4.jpg"
+},
+{
+    "nome": "Fernando Ribeiro",
+    "foto": "https://randomuser.me/api/portraits/men/5.jpg"
+},
+{
+    "nome": "Juliana Barbosa",
+    "foto": "https://randomuser.me/api/portraits/women/5.jpg"
+},
+{
+    "nome": "Rafael Mendes",
+    "foto": "https://randomuser.me/api/portraits/men/6.jpg"
+},
+{
+    "nome": "Sofia Costa",
+    "foto": "https://randomuser.me/api/portraits/women/6.jpg"
+},
+{
+    "nome": "Gustavo Rocha",
+    "foto": "https://randomuser.me/api/portraits/men/7.jpg"
+},
+{
+    "nome": "Laura Martins",
+    "foto": "https://randomuser.me/api/portraits/women/7.jpg"
+},
+{
+    "nome": "Rodrigo Carvalho",
+    "foto": "https://randomuser.me/api/portraits/men/8.jpg"
+},
+{
+    "nome": "Camila Fernandes",
+    "foto": "https://randomuser.me/api/portraits/women/8.jpg"
+},
+{
+    "nome": "Vinícius Azevedo",
+    "foto": "https://randomuser.me/api/portraits/men/9.jpg"
+},
+{
+    "nome": "Isabela Lima",
+    "foto": "https://randomuser.me/api/portraits/women/9.jpg"
+},
+{
+    "nome": "Thiago Gomes",
+    "foto": "https://randomuser.me/api/portraits/men/10.jpg"
+},
+{
+    "nome": "Renata Freitas",
+    "foto": "https://randomuser.me/api/portraits/women/10.jpg"
+},
+{
+  "nome": "João Silva",
+  "foto": "https://randomuser.me/api/portraits/men/1.jpg"
+},
+{
+  "nome": "Maria Oliveira",
+  "foto": "https://randomuser.me/api/portraits/women/1.jpg"
+},
+{
+  "nome": "Carlos Pereira",
+  "foto": "https://randomuser.me/api/portraits/men/2.jpg"
+},
+{
+  "nome": "Ana Costa",
+  "foto": "https://randomuser.me/api/portraits/women/2.jpg"
+},
+{
+  "nome": "Pedro Souza",
+  "foto": "https://randomuser.me/api/portraits/men/3.jpg"
+},
+{
+  "nome": "Clara Santos",
+  "foto": "https://randomuser.me/api/portraits/women/3.jpg"
+},
+{
+  "nome": "Lucas Lima",
+  "foto": "https://randomuser.me/api/portraits/men/4.jpg"
+},
+{
+  "nome": "Beatriz Almeida",
+  "foto": "https://randomuser.me/api/portraits/women/4.jpg"
+},
+{
+  "nome": "Fernando Ribeiro",
+  "foto": "https://randomuser.me/api/portraits/men/5.jpg"
+},
+{
+  "nome": "Juliana Barbosa",
+  "foto": "https://randomuser.me/api/portraits/women/5.jpg"
+},
+{
+  "nome": "Rafael Mendes",
+  "foto": "https://randomuser.me/api/portraits/men/6.jpg"
+},
+{
+  "nome": "Sofia Costa",
+  "foto": "https://randomuser.me/api/portraits/women/6.jpg"
+},
+{
+  "nome": "Gustavo Rocha",
+  "foto": "https://randomuser.me/api/portraits/men/7.jpg"
+},
+{
+  "nome": "Laura Martins",
+  "foto": "https://randomuser.me/api/portraits/women/7.jpg"
+},
+{
+  "nome": "Rodrigo Carvalho",
+  "foto": "https://randomuser.me/api/portraits/men/8.jpg"
+},
+{
+  "nome": "Camila Fernandes",
+  "foto": "https://randomuser.me/api/portraits/women/8.jpg"
+},
+{
+  "nome": "Vinícius Azevedo",
+  "foto": "https://randomuser.me/api/portraits/men/9.jpg"
+},
+{
+  "nome": "Isabela Lima",
+  "foto": "https://randomuser.me/api/portraits/women/9.jpg"
+},
+{
+  "nome": "Thiago Gomes",
+  "foto": "https://randomuser.me/api/portraits/men/10.jpg"
+},
+{
+  "nome": "Renata Freitas",
+  "foto": "https://randomuser.me/api/portraits/women/10.jpg"
+}
+]
