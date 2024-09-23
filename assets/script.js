@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Função para obter a data atual considerando o fuso horário de São Paulo (GMT-3)
     function obterDataNoFusoHorario() {
         const agora = new Date();
-        // Ajuste o horário para GMT-3
         const offsetHoras = -3;
         const dataAjustada = new Date(agora.getTime() + (offsetHoras - agora.getTimezoneOffset() / 60) * 60 * 60 * 1000);
         return dataAjustada;
@@ -25,28 +24,25 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(membros => {
                 const hoje = obterDataNoFusoHorario();
                 const ano = hoje.getFullYear();
-                const mes = hoje.getMonth(); // Janeiro é 0
+                const mes = hoje.getMonth();
                 const diasNoMes = new Date(ano, mes + 1, 0).getDate();
 
                 // Garante que o dia esteja dentro do intervalo válido do mês
                 const diaValido = Math.min(Math.max(dia, 1), diasNoMes);
 
-                // Calcula a quantidade total de membros e a quantidade de membros por dia
+                // Distribui os membros igualmente pelos dias do mês
                 const totalMembros = membros.length;
-                const membrosPorDia = Math.ceil(totalMembros / diasNoMes);
+                const membrosPorDia = Math.floor(totalMembros / diasNoMes);
+                const membrosExtras = totalMembros % diasNoMes;
 
-                // Calcula o índice de início e fim para o dia específico
-                let membroIndex = (diaValido - 1) * membrosPorDia;
-                let membrosNoDia = Math.min(membrosPorDia, totalMembros - membroIndex);
+                // Verifica se o dia recebe um membro extra
+                const membrosParaEsteDia = membrosPorDia + (diaValido <= membrosExtras ? 1 : 0);
 
-                // Se o índice inicial estiver além do total de membros, ajusta-o
-                if (membroIndex >= totalMembros) {
-                    membroIndex = totalMembros - membrosPorDia;
-                    membrosNoDia = totalMembros - membroIndex;
-                }
+                // Calcula o índice de início para o dia específico
+                let membroIndex = (diaValido - 1) * membrosPorDia + Math.min(diaValido - 1, membrosExtras);
 
                 // Seleciona os membros do dia específico
-                const diaMembros = membros.slice(membroIndex, membroIndex + membrosNoDia);
+                const diaMembros = membros.slice(membroIndex, membroIndex + membrosParaEsteDia);
 
                 // Gera os cards para os membros do dia específico
                 let html = '';
