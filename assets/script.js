@@ -54,7 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     html += `
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                         <div class="card h-100">
-                            <img src="${membro.foto}" class="card-img-top" alt="${membro.nome}">
                             <div class="card-body">
                                 <h5 class="card-title">${membro.nome}</h5>
                             </div>
